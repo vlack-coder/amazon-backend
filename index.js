@@ -238,6 +238,11 @@ app.post("/product", ProductController);
 
 app.get("/product", ProductControl);
 
+
+// app.get("/", (req, res, next) =>
+//   res.json({ message: "app working." })
+// );
+
 app.use("/", (req, res, next) =>
   res.status(404).json({ message: "Page not found." })
 );
