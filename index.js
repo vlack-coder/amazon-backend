@@ -20,17 +20,7 @@ const app = express();
 app.use(cors());
 const port = process.env.PORT || 3001;
 
-// CORS middleware
-// app.use((req, res, next) => {
-//   res.setHeader("Access-Control-Allow-Origin", "*");
-//   res.setHeader(
-//     "Access-Control-Allow-Methods",
-//     "GET, POST, PUT, PATCH, DELETE"
-//   );
-//   res.setHeader("Access-Control-Allow-HEaders", "Content-Type, Authorization");
-//   next();
-// });
-// app.use(cors)
+
 
 app.use(express.json());
 
